@@ -7,6 +7,7 @@ const server = http.createServer((req,res)=>{
 
     if(req.url === '/demo'){
         res.write('showing demo response');
+        console.log("say hi")
         res.end();
     }
 })
