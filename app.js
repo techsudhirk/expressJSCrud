@@ -4,6 +4,11 @@ const server = http.createServer((req,res)=>{
        res.write("hello sudhir")
        res.end();
     }
+
+    if(req.url === '/demo'){
+        res.write('showing demo response');
+        res.end();
+    }
 })
 
 server.listen(3000);
